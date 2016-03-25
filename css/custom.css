@@ -1,0 +1,75 @@
+body {
+    min-height: 2000px;
+    font-size: 1.4em;
+    /*padding-top: 70px;*/
+}
+
+.siteheader {
+    padding-bottom: 15px;
+}
+
+/* Main page */
+A.post-link {
+    text-decoration: none;
+}
+A.post-link:hover, A.post-link:focus, A.post-link:hover > DIV.post-data > H2.post-title {
+    color: #b40202;
+    text-decoration: none;
+}
+DIV.post-preview {
+    margin-bottom: 12px;
+}
+H2.post-title {
+    font-size: 1.2em;
+    color: #000;
+    margin-top: 0;
+}
+P.post-preamble {
+    font-size: 0.9em;
+    color: #8D8D8D;
+    padding-right: 20px;
+}
+P.rubrics {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+DIV.post-image-data {
+    position: absolute;
+    right: 30px;
+    left: 45px;
+    bottom: 45px;
+    z-index: 2;
+    text-align: left;
+}
+DIV.post-image-data DIV.post-title {
+    font-size: 2em;
+    color: #FFF;
+    font-family: "PT Serif Caption";
+    line-height: 1.2em;
+}
+.container-height > [class*="col-"] {
+    min-height: 400px;
+}
+
+/* Buttons */
+.btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4
+}
+.btn-chatoff {
+    color: #b40202;
+    background-color: #fff;
+    border-color: #df1e1e;
+}
+.btn-chatoff:focus, .btn-chatoff:hover {
+    color: #b40202;
+    border-color: #df1e1e;
+}
+
+/* Fields */
+.red-shadow:focus {
+    border-color: #b40202;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(233, 117, 102, .6)
+}

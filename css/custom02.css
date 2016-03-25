@@ -1,0 +1,148 @@
+body {
+    min-height: 2000px;
+    font-size: 1.4em;
+    background: #E4E4E4;
+    /*padding-top: 70px;*/
+}
+H3 {
+    margin-bottom: 20px;
+}
+
+.siteheader {
+    padding-bottom: 15px;
+}
+
+/* Main page */
+A.post-link {
+    text-decoration: none;
+}
+A.post-link:hover, A.post-link:focus, A.post-link:hover > DIV.post-data > H2.post-title {
+    color: #b40202;
+    text-decoration: none;
+}
+DIV.post-preview {
+    margin-bottom: 12px;
+}
+H2.post-title {
+    font-size: 1.2em;
+    color: #000;
+    margin-top: 0;
+}
+P.post-preamble {
+    font-size: 0.9em;
+    color: #8D8D8D;
+    padding-right: 20px;
+}
+P.rubrics {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-family: "PT Serif Caption";
+
+}
+DIV.post-image-data {
+    text-align: left;
+}
+DIV.post-image-data DIV.post-title {
+    font-size: 2em;
+    color: #000;
+    font-family: "PT Serif Caption";
+    line-height: 1.2em;
+}
+.container-height > [class*="col-"] {
+    min-height: 370px;
+}
+
+/* Afisha & photoreports */
+.afisha-div {
+    border-radius: 4px;
+    margin-bottom: 0px;
+    color: #FFF;
+    font-family: 'PT Serif Caption';
+    padding-bottom: 20px;
+    background-color: #333;
+    background: -webkit-linear-gradient(#333, #5b5b5b); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#333, #5b5b5b); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#333, #5b5b5b); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#333, #5b5b5b); /* Standard syntax */
+}
+.photoreport-div {
+    background-color: #333;
+    background: -webkit-linear-gradient(#e71200, #c90000); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#e71200, #c90000); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#e71200, #c90000); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#e71200, #c90000); /* Standard syntax */
+}
+.afisha-block DIV.post-data P, .afisha-block DIV.post-data H2 {
+    color: #FFF
+}
+.afisha-block DIV.post-data P.rubrics {
+    color: #adadad;
+}
+.afisha-block DIV.post-data P.post-preamble {
+    color: #adadad;
+}
+.afisha-genres A {
+    margin-right: 15px;
+    color: #888;
+}
+
+/* Blocks */
+.block-title {
+    font-family: 'PT Serif Caption';
+    margin: 0 0 20px 0;
+    padding-top: 0px;
+    margin-top: 0px;
+    display: inline-block;
+    margin-right: 30px;
+}
+.block-flows {
+    display: inline-block;
+}
+.block-flows-title {
+    color: #ababab; font-size: 0.8em;
+}
+.block-flows-links {
+    font-size: 0.9em;
+}
+.block-flows-links A {
+    color: #333;
+    margin-right: 10px;
+}
+
+/* Buttons */
+.btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4
+}
+.btn-chatoff {
+    color: #b40202;
+    background-color: #fff;
+    border-color: #df1e1e;
+}
+.btn-chatoff:focus, .btn-chatoff:hover {
+    color: #b40202;
+    background-color: #e6e6e6;
+    border-color: #df1e1e;
+}
+.btn-xl {
+    padding: 6px 24px;
+    color: #222;
+    background: #FFF;
+}
+.btn-xxl {
+    padding: 14px 100px;
+    font-size: 1.4em;
+}
+.btn-chatoff-inverse {
+    color: #FFF;
+    background-color: #b40202;
+    border-color: #df1e1e;
+}
+
+/* Fields */
+.red-shadow:focus {
+    border-color: #b40202;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(233, 117, 102, .6)
+}
