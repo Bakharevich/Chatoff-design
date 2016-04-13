@@ -32,6 +32,17 @@
     UL.mainmenu LI {
         padding-left: 15px;
     }
+    .no-float-xs {
+        float: inherit;
+    }
+
+    .menu-list-xs {
+
+    }
+    .menu-list-xs LI A {
+        color: #FFF;
+        background: #FFF;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -49,6 +60,9 @@
     }
     .margin-bottom-10-sm {
         margin-bottom: 10px;
+    }
+    .float-sm {
+        float: left;
     }
 }
 
@@ -68,6 +82,9 @@
     .margin-bottom-10-md {
         margin-bottom: 10px;
     }
+    .float-md {
+        float: left;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -82,5 +99,8 @@
     }
     .text-center-lg {
         text-align: center;
+    }
+    .float-lg {
+        float: left;
     }
 }

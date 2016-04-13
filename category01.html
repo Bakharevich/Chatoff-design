@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Chatoff Company - Category</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/weather-icons.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/custom02.css" rel="stylesheet">
+    <link href="css/custom_company01.css" rel="stylesheet">
+    <link href="css/custom_resolutions.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="js/ie8-responsive-file-warning.js"></script>
+    <script src="js/ie-emulation-modes-warning.js"></script>
+    <![endif]-->
+
+    <link href='//fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,300italic,300&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=PT+Serif+Caption:400,400italic&subset=latin,cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'>
+
+    <!-- Company -->
+    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+
+<body>
+
+<style>
+    html, body, #map {
+        width: 100%;
+        height: 100px; padding: 0; margin: 0;
+    }
+</style>
+
+<script>
+    // map
+    ymaps.ready(init);
+
+    function init () {
+        var myMap = new ymaps.Map("map", {
+            center: [53.90241078393636,27.551913499999962],
+            zoom: 16,
+            controls: []
+        }, {
+            searchControlProvider: 'yandex#search'
+        });
+
+        myMap.geoObjects
+                .add(new ymaps.Placemark([53.90241078393636,27.551913499999962], {
+                    balloonContent: 'цвет <strong>воды пляжа бонди</strong>'
+                }, {
+                    preset: 'islands#icon',
+                    iconColor: '#f10000'
+                }));
+    }
+
+</script>
+
+<div class="container hidden-xs site-header">
+    <div class="col-sm-12 col-md-3 text-center-sm site-header-logo">
+        <img src="img/logo-sm.png" />
+    </div>
+    <div class="col-sm-7 col-md-5 site-header-search">
+        <form class="form-horizontal">
+            <div class="input-group">
+                <input type="text" class="form-control red-shadow" placeholder="Поиск по сайту" />
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                </span>
+            </div>
+        </form>
+    </div>
+    <div class="col-sm-5 col-md-4 text-right site-header-buttons">
+        <a href="#" class="btn btn-chatoff">Добавить заведение</a>
+        &nbsp;&nbsp;
+
+        <div class="btn-group">
+            <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="glyphicon glyphicon-map-marker"></span> Минск
+            </a>
+
+            <ul class="dropdown-menu">
+                <li><a href="#">Минск</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Бобруйск</a></li>
+                <li><a href="#">Гомель</a></li>
+                <li><a href="#">Борисов</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<!-- Navbar -->
+<div class="container site-menu">
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand visible-xs site-menu-logo-xs" href="#">
+                    <img src="img/logo-xs-white.png" srcset="img/logo-xs-white-x2.png" width="132" height="31" />
+                </a>
+
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <style>
+
+                </style>
+
+                <ul class="nav navbar-nav mainmenu">
+                    <li>
+                        <a href="#" class="tab" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="title">Развлечения</span><br/>
+                            <span class="subtitle">и досуг</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Рестораны</a></li>
+                            <li><a href="#">Кафе и бары</a></li>
+                            <li><a href="#">Кофейни</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Заглавие</li>
+                            <li><a href="#">Караоке клубы</a></li>
+                            <li><a href="#">Казино</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="tab">
+                            <span class="title">Красота</span><br/>
+                            <span class="subtitle">и здоровье</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="tab">
+                            <span class="title">Красота</span><br/>
+                            <span class="subtitle">и дети</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="tab">
+                            <span class="title">Магазины</span><br/>
+                            <span class="subtitle">и торговые центры</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="tab">
+                            <span class="title">Спорт</span><br/>
+                            <span class="subtitle">и активный отдых</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="tab">
+                            <span class="title">Авто</span><br/>
+                            <span class="subtitle">и автошколы</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="tab">
+                            <span class="title">Путешествия</span><br/>
+                            <span class="subtitle">и отдых</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="tab">
+                            <span class="title">Праздник</span><br/>
+                            <span class="subtitle">и подарки</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="tab">
+                            <span class="title">Курсы</span><br/>
+                            <span class="subtitle">и обучение</span>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="tab" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="title">Курсы <span class="caret"></span></span><br/>
+                            <span class="subtitle">и обучение</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Nav header</li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="tab">
+                            <span class="title">Афиша</span><br/>
+                            <span class="subtitle">&nbsp;</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <!--
+                    <li><a href="../navbar/">Default</a></li>
+                    <li><a href="../navbar-static-top/">Static top</a></li>
+                    <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>
+                    -->
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+</div>
+
+<!-- Breadcrumbs -->
+<div class="container no-padding">
+    <ol class="breadcrumb padding-xs-leftright-15">
+        <li><a href="#">Развлечения и досуг</a></li>
+        <li class="active">Клубы</li>
+    </ol>
+</div>
+
+<!-- Content -->
+<div class="container site-content">
+    <div class="col-md-12" style="padding-bottom: 20px;">
+        <h1 style="margin-top: 0px; padding-top: 0px;">Рестораны в Минске</h1>
+
+        <p style="font-size: 0.9em; color: #555;">Все рестораны Минска собраны здесь не случайно: на заре третьего тысячелетия каждый житель столицы обладает полным правом выбрать ресторан по своему вкусу: рестораны с живой музыкой, стейк-хаусы, суши-бары, рестораны национальных кухонь, пабы, фуд-корты - и все остальные. По прошествии так и не случившегося конца света тем более стоит брать от жизни всё - и завтракать в одном ресторане, обедать - в другом, а ужинать - в третьем - это совсем не роскошь, а возможность внести в свою жизнь побольше разнообразия, как-то разбив порочный круг дом-работа-дом. Мы разместили на портале все рестораны Минска для вас, дорогие посетители; а владельцы ресторанов пусть конкурируют и соревнуются в естественном желании вам угодить.</p>
+    </div>
+    <div class="col-md-12 margin-bottom-40">
+        <div id="map"></div>
+    </div>
+    <div class="col-md-3 padding-left-0-xs padding-right-0-xs">
+        <h3 class="padding-top-0 margin-top-0">Поиск</h3>
+
+        <form>
+            <div class="form-group">
+                <label for="input01">Название</label>
+                <input type="text" class="form-control" id="input01" placeholder="Введите название..." />
+            </div>
+            <div class="form-group">
+                <label for="input01">Улица</label>
+                <input type="text" class="form-control" id="input01" placeholder="Например, Мясникова" />
+            </div>
+            <div class="form-group">
+                <label for="input01">Метро</label>
+                <select class="form-control">
+                    <option>Не выбрано</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="input01">Район</label>
+                <select class="form-control">
+                    <option>Не выбрано</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="input01">Режим работы</label>
+                <select class="form-control">
+                    <option>Не выбрано</option>
+                </select>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-9 padding-left-0-xs padding-right-0-xs">
+
+        <div class="row margin-bottom-40">
+            <div class="col-md-4">
+                <img src="tmp/tmp_category/01.jpg" class="img-responsive img-rounded" />
+            </div>
+            <div class="col-md-8">
+                <h3 class="margin-top-0 margin-bottom-10">Название компании</h3>
+
+                <div class="btn-group margin-bottom-10-xs margin-bottom-10-sm margin-bottom-10-md margin-right-5">
+                    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="glyphicon glyphicon-phone-alt color-chatoff margin-right-5"></span>
+                        Телефоны <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="tel:+375172036967">+375 17 203-69-67</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Неверный адрес?</a></li>
+                    </ul>
+                </div>
+
+                <div class="btn-group margin-bottom-10-xs margin-bottom-10-sm margin-bottom-10-md margin-right-5">
+                    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="glyphicon glyphicon-map-marker color-chatoff margin-right-5"></span>
+                        Адреса <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">г. Минск, ул. Революционная, 9</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Неверный телефон?</a></li>
+                    </ul>
+                </div>
+
+                <div class="btn-group margin-bottom-10-xs margin-bottom-10-sm margin-bottom-10-md margin-right-5">
+                    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="glyphicon glyphicon-time color-chatoff margin-right-5"></span>
+                        Время работы <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Время работы</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">понедельник 12:00 - 02:00</a></li>
+                    </ul>
+                </div>
+
+                <div class="clearfix margin-bottom-20"></div>
+
+                <p class="margin-top-10" style="color: #7a7a7a; font-size: 0.9em;">В жизни всегда должно быть место для праздника, отдыха: свадьба  это или просто  встреча с хорошими друзьями. И  в такой момент встает вопрос о месте  его проведения. Хочется, чтобы это заведение максимально отвечало всем требованиям, таким как: современный</p>
+
+                <div class="row">
+                    <div class="col-md-6">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <img src="tmp/tmp_category/01.jpg" class="img-responsive img-rounded" />
+            </div>
+            <div class="col-md-8">
+                <h3 class="margin-top-0 margin-bottom-10">Название компании</h3>
+
+                <div class="btn-group margin-bottom-10-xs margin-bottom-10-sm margin-bottom-10-md margin-right-5">
+                    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="glyphicon glyphicon-phone-alt color-chatoff margin-right-5"></span>
+                        Телефоны <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="tel:+375172036967">+375 17 203-69-67</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Неверный адрес?</a></li>
+                    </ul>
+                </div>
+
+                <div class="btn-group margin-bottom-10-xs margin-bottom-10-sm margin-bottom-10-md margin-right-5">
+                    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="glyphicon glyphicon-map-marker color-chatoff margin-right-5"></span>
+                        Адреса <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">г. Минск, ул. Революционная, 9</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Неверный телефон?</a></li>
+                    </ul>
+                </div>
+
+                <div class="btn-group margin-bottom-10-xs margin-bottom-10-sm margin-bottom-10-md margin-right-5">
+                    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="glyphicon glyphicon-time color-chatoff margin-right-5"></span>
+                        Время работы <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Время работы</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">понедельник 12:00 - 02:00</a></li>
+                    </ul>
+                </div>
+
+                <div class="clearfix margin-bottom-20"></div>
+
+                <p class="margin-top-10" style="color: #7a7a7a; font-size: 0.9em;">В жизни всегда должно быть место для праздника, отдыха: свадьба  это или просто  встреча с хорошими друзьями. И  в такой момент встает вопрос о месте  его проведения. Хочется, чтобы это заведение максимально отвечало всем требованиям, таким как: современный</p>
+
+                <div class="row">
+                    <div class="col-md-6">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of company -->
+    </div>
+</div>
+
+<footer class="container site-footer">
+    <div class="col-md-3 text-center-xs text-center-sm site-footer-logo">
+        <img src="img/logo-sm.png" class="no-margin-bottom-xs" />
+    </div>
+    <div class="col-md-9 text-center-xs text-center-sm site-footer-links">
+        <a href="#">О компании</a>
+        <a href="#">Размещение рекламы</a>
+        <a href="#">Правила</a>
+        <a href="#">Связаться с Чатофф</a>
+        <a href="#">Публичный договор</a>
+        <a href="#">Добавить компанию</a>
+        <a href="#">Вакансии</a>
+        <a href="#">Партнерам</a>
+        <a href="#">Добавить афишу</a>
+        <a href="#">Панорамная 3D-фотография</a>
+        &copy; ООО "Чатофф", 2008 - 2016
+    </div>
+</footer>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+<script src="js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="js/ie10-viewport-bug-workaround.js"></script>
+
+<!-- Fotorama -->
+<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+
+
+<script>
+    $(function () {
+
+    });
+</script>
+
+
+</body>
+</html>
