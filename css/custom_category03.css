@@ -9,7 +9,10 @@
     margin-bottom: 15px;
 
 }
-
+.category-company-name A {
+    color: #006699;
+    text-decoration: underline;
+}
 
 
 @media (max-width: 767px) {

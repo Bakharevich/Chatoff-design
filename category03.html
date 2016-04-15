@@ -58,7 +58,7 @@
     function init () {
         var myMap = new ymaps.Map("map", {
             center: [53.90241078393636,27.551913499999962],
-            zoom: 16,
+            zoom: 11,
             controls: []
         }, {
             searchControlProvider: 'yandex#search'
@@ -70,7 +70,50 @@
                 }, {
                     preset: 'islands#icon',
                     iconColor: '#f10000'
-                }));
+                }))
+                .add(new ymaps.Placemark([53.91241078393636,27.541913499999962], {
+                    balloonContent: 'цвет <strong>воды пляжа бонди</strong>'
+                }, {
+                    preset: 'islands#icon',
+                    iconColor: '#006699'
+                }))
+                .add(new ymaps.Placemark([53.92241078393636,27.541913499999962], {
+                    balloonContent: 'цвет <strong>воды пляжа бонди</strong>'
+                }, {
+                    preset: 'islands#icon',
+                    iconColor: '#006699'
+                }))
+                .add(new ymaps.Placemark([53.92241078393636,27.521913499999962], {
+                    balloonContent: 'цвет <strong>воды пляжа бонди</strong>'
+                }, {
+                    preset: 'islands#icon',
+                    iconColor: '#006699'
+                }))
+                .add(new ymaps.Placemark([53.92241078393636,27.501913499999962], {
+                    balloonContent: 'цвет <strong>воды пляжа бонди</strong>'
+                }, {
+                    preset: 'islands#icon',
+                    iconColor: '#006699'
+                }))
+                .add(new ymaps.Placemark([53.92241078393636,27.531913499999962], {
+                    balloonContent: 'цвет <strong>воды пляжа бонди</strong>'
+                }, {
+                    preset: 'islands#icon',
+                    iconColor: '#006699'
+                }))
+                .add(new ymaps.Placemark([53.89241078393636,27.541913499999962], {
+                    balloonContent: 'цвет <strong>воды пляжа бонди</strong>'
+                }, {
+                    preset: 'islands#icon',
+                    iconColor: '#006699'
+                }))
+                .add(new ymaps.Placemark([53.89241078393636,27.581913499999962], {
+                    balloonContent: 'цвет <strong>воды пляжа бонди</strong>'
+                }, {
+                    preset: 'islands#icon',
+                    iconColor: '#006699'
+                }))
+        ;
     }
 
 </script>
@@ -240,92 +283,213 @@
 
 <!-- Content -->
 <div class="container site-content">
-    <div class="col-md-8">
+    <!-- Right block -->
+    <div class="col-md-9">
         <h1 style="margin-top: 0px; padding-top: 0px;">Рестораны в Минске</h1>
 
-        <p style="font-size: 0.9em; color: #7a7a7a;">Все рестораны Минска собраны здесь не случайно: на заре третьего тысячелетия каждый житель столицы обладает полным правом выбрать ресторан по своему вкусу: рестораны с живой музыкой, стейк-хаусы, суши-бары, рестораны национальных кухонь, пабы, фуд-корты - и все остальные. По прошествии так и не случившегося конца света тем более стоит брать от жизни всё - и завтракать в одном ресторане, обедать - в другом, а ужинать - в третьем - это совсем не роскошь, а возможность внести в свою жизнь побольше разнообразия, как-то разбив порочный круг дом-работа-дом. Мы разместили на портале все рестораны Минска для вас, дорогие посетители; а владельцы ресторанов пусть конкурируют и соревнуются в естественном желании вам угодить.</p>
+        <p class="margin-bottom-10" style="font-size: 0.9em; color: #222;">Все рестораны Минска собраны здесь не случайно: на заре третьего тысячелетия каждый житель столицы обладает полным правом выбрать ресторан по своему вкусу: рестораны с живой музыкой, стейк-хаусы, суши-бары, рестораны национальных кухонь, пабы, фуд-корты - и все остальные. По прошествии так и не случившегося конца света тем более стоит брать от жизни всё - и завтракать в одном ресторане, обедать - в другом, а ужинать - в третьем - это совсем не роскошь, а возможность внести в свою жизнь побольше разнообразия, как-то разбив порочный круг дом-работа-дом. </p>
 
-        <br/>
+        <!-- Options -->
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Кухня</h4>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Американская
+                    </label>
+                </div>
 
-        <form class="form-inline">
-            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Азербайджанская
+                    </label>
+                </div>
 
-                <select class="form-control input-sm">
-                    <option>Станция метро</option>
-                </select>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Армянская
+                    </label>
+                </div>
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Белорусская
+                    </label>
+                </div>
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Грузинская
+                    </label>
+                </div>
             </div>
-            <div class="form-group">
+            <div class="col-md-4">
+                <h4>Тип заведения</h4>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Ресторан
+                    </label>
+                </div>
 
-                <input type="email" class="form-control input-sm" id="exampleInputEmail2" placeholder="Улица...">
-            </div>
-            <div class="form-group">
-                <input type="email" class="form-control input-sm" id="exampleInputEmail2" placeholder="Название...">
-            </div>
-            <button type="submit" class="btn btn-default btn-sm">Показать</button>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Ресторан-клуб
+                    </label>
+                </div>
 
-            <button type="button" class="btn btn-default btn-sm" id="show_options">Расширенный поиск <span class="caret"></span></button>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Ресторан-бар
+                    </label>
+                </div>
 
-            <div id="options" style="display: none; height: 300px; background: #e3e3e3; margin-top: 10px;">
-                Блок з дадатковымі опцыямі
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Ресторан-кабаре
+                    </label>
+                </div>
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Ресторан-лаунж
+                    </label>
+                </div>
             </div>
-        </form>
+            <div class="col-md-4">
+                <h4>Особенности меню</h4>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Завтрак
+                    </label>
+                </div>
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Обеденное меню
+                    </label>
+                </div>
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Детское меню
+                    </label>
+                </div>
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Вегетарианское меню
+                    </label>
+                </div>
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Романтический ужин
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-12 text-center" style="padding-top: 10px;">
+                <button class="btn btn-primary">Искать</button>
+                <a href="#" class="btn btn-default">Показать все <span class="caret"></span></a>
+            </div>
+        </div>
 
         <br/><br/>
 
+        <div class="row">
+            <div class="col-sm-5 text-left" style="font-size: 0.9em; padding-top: 7px; color: #555;">
+                Нашлось <b>189</b> ресторанов из <b>357</b> в категории
+            </div>
+            <div class="col-sm-7 text-right">
+                <span style="font-size: 0.9em;">Сортировка:</span>
+                <div class="btn-group" role="group" aria-label="...">
+                    <button type="button" class="btn btn-default btn-xs active">Рейтинг</button>
+                    <button type="button" class="btn btn-default btn-xs">Название</button>
+                    <button type="button" class="btn btn-default btn-xs">Дата добавления</button>
+                </div>
+            </div>
+
+        </div>
+
+        <br/>
+
         <div class="row margin-bottom-40">
             <div class="col-md-5">
-                <img src="tmp/tmp_category/01.jpg" class="img-responsive img-rounded" />
+                <img src="tmp/tmp_category/01.jpg" class="img-responsive img-rounded" style="margin-bottom: 10px;" />
+
+                <div class="alert alert-danger" style="font-size: 0.9em; padding: 10px;">Организация свадеб, банкетов, юбилеев +375 29 690 690 2</div>
+
+
             </div>
             <div class="col-md-7">
-                <h3 class="margin-top-0 margin-bottom-10">Название компании</h3>
+                <h3 class="category-company-name margin-top-0 margin-bottom-10"><a href="company.html">Губерния</a></h3>
 
-                <div class="btn-group margin-bottom-10-xs margin-bottom-10-sm margin-bottom-10-md margin-right-5">
-                    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="glyphicon glyphicon-phone-alt color-chatoff margin-right-5"></span>
-                        Телефоны <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a href="tel:+375172036967">+375 17 203-69-67</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Неверный адрес?</a></li>
-                    </ul>
+                <div style="line-height: 2.3em;">
+                    <div class="btn-group margin-bottom-10-xs margin-bottom-10-sm margin-bottom-10-md margin-right-5">
+                        <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-phone-alt color-chatoff margin-right-5"></span>
+                            +375 29 772-47-28 <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="tel:+375172036967">+375 17 203-69-67</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Неверный адрес?</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="btn-group margin-bottom-10-xs margin-bottom-10-sm margin-bottom-10-md margin-right-5">
+                        <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-map-marker color-chatoff margin-right-5"></span>
+                            г. Минск, ул. Мясникова, 78 <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">г. Минск, ул. Революционная, 9</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Показать на карте</a></li>
+                            <li><a href="#">Неверный адрес?</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="btn-group margin-bottom-10-xs margin-bottom-10-sm margin-bottom-10-md margin-right-5">
+                        <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-time color-chatoff margin-right-5"></span>
+                            Время работы <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Время работы</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">понедельник 12:00 - 02:00</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="btn-group margin-bottom-10-xs margin-bottom-10-sm margin-bottom-10-md margin-right-5">
+
+                        <button type="button" class="btn btn-default btn-xs">
+                            <span class="glyphicon glyphicon-ok-circle color-chatoff margin-right-5"></span> Забронировать
+                        </button>
+                    </div>
                 </div>
 
-                <div class="btn-group margin-bottom-10-xs margin-bottom-10-sm margin-bottom-10-md margin-right-5">
-                    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="glyphicon glyphicon-map-marker color-chatoff margin-right-5"></span>
-                        Адреса <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">г. Минск, ул. Революционная, 9</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Неверный телефон?</a></li>
-                    </ul>
-                </div>
-
-                <div class="btn-group margin-bottom-10-xs margin-bottom-10-sm margin-bottom-10-md margin-right-5">
-                    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="glyphicon glyphicon-time color-chatoff margin-right-5"></span>
-                        Время работы <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Время работы</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">понедельник 12:00 - 02:00</a></li>
-                    </ul>
-                </div>
-
-                <div style="margin-top: 10px;">
-
-                    <button type="button" class="btn btn-default btn-xs">
-                        <span class="glyphicon glyphicon-ok-circle color-chatoff margin-right-5"></span> Забронировать
-                    </button>
-                </div>
+                <div class="clearfix margin-top-10" style="color: #589442;">Рейтинг: <b>8.0</b> из 10</div>
 
 
-                <div class="clearfix margin-bottom-20"></div>
+                <div class="clearfix margin-bottom-10"></div>
 
-                <p class="margin-top-10" style="color: #7a7a7a; font-size: 0.9em;">В жизни всегда должно быть место для праздника, отдыха: свадьба  это или просто  встреча с хорошими друзьями. И  в такой момент встает вопрос о месте  его проведения. Хочется, чтобы это заведение максимально отвечало всем требованиям, таким как: современный</p>
+                <p class="margin-top-10" style="color: #000; font-size: 0.9em;">В жизни всегда должно быть место для праздника, отдыха: свадьба  это или просто  встреча с хорошими друзьями. И  в такой момент встает вопрос о месте  его проведения. Хочется, чтобы это заведение максимально отвечало всем требованиям, таким как: современный. Заказать банкет Ресторан «Лавский» является частью гостиничного комплекса «Монастырский», который, в свою очередь, располагается в древних стенах мужского монастыря бернардинцев.</p>
 
                 <div class="row">
                     <div class="col-md-6">
@@ -340,47 +504,52 @@
                 <img src="tmp/tmp_category/02.jpg" class="img-responsive img-rounded" />
             </div>
             <div class="col-md-7">
-                <h3 class="margin-top-0 margin-bottom-10">Название компании</h3>
+                <h3 class="category-company-name margin-top-0 margin-bottom-10"><a href="company.html">Виктория на Замковой</a></h3>
 
-                <div class="btn-group margin-bottom-10-xs margin-bottom-10-sm margin-bottom-10-md margin-right-5">
-                    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="glyphicon glyphicon-phone-alt color-chatoff margin-right-5"></span>
-                        Телефоны <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a href="tel:+375172036967">+375 17 203-69-67</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Неверный адрес?</a></li>
-                    </ul>
+                <div style="line-height: 2.3em;">
+                    <div class="btn-group margin-bottom-10-xs margin-bottom-10-sm margin-bottom-10-md margin-right-5">
+                        <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-phone-alt color-chatoff margin-right-5"></span>
+                            +375 29 123-45-67 <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="tel:+375172036967">+375 17 203-69-67</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Неверный адрес?</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="btn-group margin-bottom-10-xs margin-bottom-10-sm margin-bottom-10-md margin-right-5">
+                        <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-map-marker color-chatoff margin-right-5"></span>
+                            г. Минск, ул. Революционная, 23 <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">г. Минск, ул. Революционная, 9</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Показать на карте</a></li>
+                            <li><a href="#">Неверный адрес?</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="btn-group margin-bottom-10-xs margin-bottom-10-sm margin-bottom-10-md margin-right-5">
+                        <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-time color-chatoff margin-right-5"></span>
+                            Время работы <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Время работы</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">понедельник 12:00 - 02:00</a></li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="btn-group margin-bottom-10-xs margin-bottom-10-sm margin-bottom-10-md margin-right-5">
-                    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="glyphicon glyphicon-map-marker color-chatoff margin-right-5"></span>
-                        Адреса <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">г. Минск, ул. Революционная, 9</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Неверный телефон?</a></li>
-                    </ul>
-                </div>
+                <div class="clearfix margin-top-10" style="color: #947242;">Рейтинг: <b>5.7</b> из 10</div>
 
-                <div class="btn-group margin-bottom-10-xs margin-bottom-10-sm margin-bottom-10-md margin-right-5">
-                    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="glyphicon glyphicon-time color-chatoff margin-right-5"></span>
-                        Время работы <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Время работы</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">понедельник 12:00 - 02:00</a></li>
-                    </ul>
-                </div>
+                <div class="clearfix margin-bottom-10"></div>
 
-                <div class="clearfix margin-bottom-20"></div>
-
-                <p class="margin-top-10" style="color: #7a7a7a; font-size: 0.9em;">В жизни всегда должно быть место для праздника, отдыха: свадьба  это или просто  встреча с хорошими друзьями. И  в такой момент встает вопрос о месте  его проведения. Хочется, чтобы это заведение максимально отвечало всем требованиям, таким как: современный</p>
+                <p class="margin-top-10" style="color: #000; font-size: 0.9em;">В жизни всегда должно быть место для праздника, отдыха: свадьба  это или просто  встреча с хорошими друзьями. И  в такой момент встает вопрос о месте  его проведения. Хочется, чтобы это заведение максимально отвечало всем требованиям, таким как: современный</p>
 
                 <div class="row">
                     <div class="col-md-6">
@@ -395,55 +564,58 @@
                 <img src="tmp/tmp_category/03.jpg" class="img-responsive img-rounded" />
             </div>
             <div class="col-md-7">
-                <h3 class="margin-top-0 margin-bottom-10">Название компании</h3>
+                <h3 class="category-company-name margin-top-0 margin-bottom-10"><a href="company.html">Лаускі (Лавский)</a></h3>
 
-                <div class="btn-group margin-bottom-10-xs margin-bottom-10-sm margin-bottom-10-md margin-right-5">
-                    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="glyphicon glyphicon-phone-alt color-chatoff margin-right-5"></span>
-                        Телефоны <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a href="tel:+375172036967">+375 17 203-69-67</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Неверный адрес?</a></li>
-                    </ul>
+                <div style="line-height: 2.3em;">
+                    <div class="btn-group margin-bottom-10-xs margin-bottom-10-sm margin-bottom-10-md margin-right-5">
+                        <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-phone-alt color-chatoff margin-right-5"></span>
+                            +375 29 761-52-03 <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="tel:+375172036967">+375 17 203-69-67</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Неверный адрес?</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="btn-group margin-bottom-10-xs margin-bottom-10-sm margin-bottom-10-md margin-right-5">
+                        <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-map-marker color-chatoff margin-right-5"></span>
+                            г. Минск, ул. Ротмистрова, 22 <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">г. Минск, ул. Революционная, 9</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Показать на карте</a></li>
+                            <li><a href="#">Неверный адрес?</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="btn-group margin-bottom-10-xs margin-bottom-10-sm margin-bottom-10-md margin-right-5">
+                        <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-time color-chatoff margin-right-5"></span>
+                            Время работы <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Время работы</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">понедельник 12:00 - 02:00</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="btn-group margin-bottom-10-xs margin-bottom-10-sm margin-bottom-10-md margin-right-5">
+                        <button type="button" class="btn btn-default btn-xs">
+                            <span class="glyphicon glyphicon-ok-circle color-chatoff margin-right-5"></span> Забронировать
+                        </button>
+                    </div>
                 </div>
 
-                <div class="btn-group margin-bottom-10-xs margin-bottom-10-sm margin-bottom-10-md margin-right-5">
-                    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="glyphicon glyphicon-map-marker color-chatoff margin-right-5"></span>
-                        Адреса <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">г. Минск, ул. Революционная, 9</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Неверный телефон?</a></li>
-                    </ul>
-                </div>
+                <div class="clearfix margin-top-10" style="color: #888;">Рейтинг: без рейтинга</div>
 
-                <div class="btn-group margin-bottom-10-xs margin-bottom-10-sm margin-bottom-10-md margin-right-5">
-                    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="glyphicon glyphicon-time color-chatoff margin-right-5"></span>
-                        Время работы <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Время работы</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">понедельник 12:00 - 02:00</a></li>
-                    </ul>
-                </div>
+                <div class="clearfix margin-bottom-10"></div>
 
-                <div style="margin-top: 10px;">
-
-                    <button type="button" class="btn btn-default btn-xs">
-                        <span class="glyphicon glyphicon-ok-circle color-chatoff margin-right-5"></span> Забронировать
-                    </button>
-                </div>
-
-
-                <div class="clearfix margin-bottom-20"></div>
-
-                <p class="margin-top-10" style="color: #7a7a7a; font-size: 0.9em;">В жизни всегда должно быть место для праздника, отдыха: свадьба  это или просто  встреча с хорошими друзьями. И  в такой момент встает вопрос о месте  его проведения. Хочется, чтобы это заведение максимально отвечало всем требованиям, таким как: современный</p>
+                <p class="margin-top-10" style="color: #000; font-size: 0.9em;">В жизни всегда должно быть место для праздника, отдыха: свадьба  это или просто  встреча с хорошими друзьями. И  в такой момент встает вопрос о месте  его проведения. Хочется, чтобы это заведение максимально отвечало всем требованиям, таким как: современный</p>
 
                 <div class="row">
                     <div class="col-md-6">
@@ -453,11 +625,66 @@
             </div>
         </div>
     </div>
-    <div class="col-md-4">
+
+    <!-- Left block -->
+    <div class="col-md-3">
         <div id="map"></div>
+
+        <div class="text-right margin-bottom-20" style="margin-top: 10px;">
+            <a href="#" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-zoom-in"></span> Увеличить карту</a>
+        </div>
+
+        <!-- Options -->
+        <form>
+            <div class="form-group">
+                <label for="input01">Название</label>
+                <input type="text" class="form-control input-sm" id="input01" placeholder="Введите название..." />
+            </div>
+            <div class="form-group">
+                <label for="input01">Улица</label>
+                <input type="text" class="form-control input-sm" id="input01" placeholder="Например, Мясникова" />
+            </div>
+            <div class="form-group">
+                <label for="input01">Метро</label>
+                <select class="form-control input-sm">
+                    <option>Не выбрано</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="input01">Район</label>
+                <select class="form-control input-sm">
+                    <option>Не выбрано</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="input01">Режим работы</label>
+                <select class="form-control input-sm">
+                    <option>Не выбрано</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-default btn-sm btn-chatoff">Показать</button>
+        </form>
+
+        <br/>
+
+        <!-- News and sales -->
+        <div style="">
+            <div class="news">
+                <a href="#" class="post-link">
+                    <div class="post-preview"><img src="tmp/tmp_company/interior01.jpg" class="img-responsive" /></div>
+                    <div class="post-data">
+                        <p class="rubrics">ИДЕИ ДИЗАЙНА</p>
+                        <h2 class="post-title">Как правильно выбрать цвет интерьера</h2>
+                        <p class="post-preamble">Разбираемся, какие приёмы помогут не совершить ошибки при выборе оттенков для вашего дома</p>
+                    </div>
+                </a>
+            </div>
+        </div>
 
         <br/><br/>
 
+        <!-- Banner -->
         <div style="">
             <img src="tmp/tmp_company/banner01.jpg" class="img-responsive" />
         </div>
