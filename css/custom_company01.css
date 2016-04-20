@@ -195,6 +195,12 @@
 .company-menu > li > a:hover  {
     background: #dbdbdb;
 }
+.company-menu > li.active > a {
+    background: #FFF;
+    color: #333;
+    border: 1px solid #dbdbdb;
+
+}
 
 /* Footer */
 .footer-links {
