@@ -10,7 +10,6 @@
 .company-rating {
     color: #257824;
     border-radius: 68px;
-    border: 4px solid #41db3f;
     width: 48px;
     height: 48px;
     font-size: 1.3em;
@@ -18,6 +17,15 @@
     background-clip: padding-box;
     text-align: center;
     display: inline-block;
+}
+.company-rating-border-good {
+    border: 4px solid #41db3f;
+}
+.company-rating-border-normal {
+    border: 4px solid #947242;
+}
+.company-rating-border-none {
+    border: 4px solid #888;
 }
 .company-vote-text {
     float: left;

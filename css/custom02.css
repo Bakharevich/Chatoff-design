@@ -64,6 +64,16 @@ H3 {
     margin-top: 10px;
 }
 
+/* company rating colour */
+.company-rating-color-good {
+    color: #589442;
+}
+.company-rating-color-normal {
+    color: #947242;
+}
+.company-rating-color-none {
+    color: #888;
+}
 
 /* top header */
 .site-header {
